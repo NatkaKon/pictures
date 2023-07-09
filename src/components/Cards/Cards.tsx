@@ -4,7 +4,7 @@ import s from "./Cards.module.css";
 import {Comments} from "../Comments/Comments";
 
 type CardType = {
-    id: string
+    id: number
     title: string
     cardPhoto: string
     cardDescription: string
@@ -14,13 +14,12 @@ type CardType = {
 type CardsPropsType = {
     title?: string
     cards: Array<CardType>
-    removeCard: (taskId: string) => void
+    removeCard: (cardId: number) => void
 }
 
 export const Cards:FC<CardsPropsType> = ({title, cards, removeCard}) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [comment, setComment]=useState('')
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -30,37 +29,32 @@ export const Cards:FC<CardsPropsType> = ({title, cards, removeCard}) => {
         setModalIsOpen(false);
     };
 
-    const onAddComment = (newComment: string) => {
-        setComment(newComment)
-    };
-
     return <div>
         <h2>{title}</h2>
         <ul className={s.cardsBlock}>
             {
-                cards.map(t => {
+                cards.map(card => {
 
-                    const onClickHandler = () => removeCard(t.id)
+                    const onClickHandler = () => removeCard(card.id)
                     const onClickCardModal = () => {
                         openModal()
                     }
 
 
-                    return <li key={t.id} className={s.card}>
+                    return <li key={card.id} className={s.card}>
                         <div className={s.cardButton} >
                             <button onClick={onClickHandler}>x</button>
                         </div>
-                        <p>{t.title}</p>
+                        <h2>{card.title}</h2>
                         <div className={s.cardContainer}>
-                            <img src={t.cardPhoto} alt={t.title} onClick={onClickCardModal}/>
+                            <img src={card.cardPhoto} alt={card.title} onClick={onClickCardModal}/>
                         </div>
 
                         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className={s.modalWindow}>
-                            <p className={s.cardDescription}>{t.cardDescription}</p>
+                            <p className={s.cardDescription}>{card.cardDescription}</p>
                         </Modal>
 
-                        <Comments onAddComment={onAddComment}/>
-                        <div>{comment}</div>
+                        <Comments />
 
                     </li>
                 })

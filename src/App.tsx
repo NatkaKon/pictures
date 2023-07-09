@@ -18,8 +18,8 @@ function App() {
 
     const [card, setCard] = useState(state.cardsData);
 
-    function removeCard(id: string) {
-        let removeCard = card.filter(t => t.id !== id);
+    function removeCard(id: number) {
+        let removeCard = card.filter(card => card.id !== id);
         setCard(removeCard);
     }
 
@@ -28,25 +28,25 @@ function App() {
     let cardsForList = card;
 
     if (filter === "eggs") {
-        cardsForList = card.filter(t => t.color === 'eggs');
+        cardsForList = card.filter(card => card.color === 'eggs');
     }
     if (filter === "parrot") {
-        cardsForList = card.filter(t => t.color === 'parrot');
+        cardsForList = card.filter(card => card.color === 'parrot');
     }
     if (filter === "bird") {
-        cardsForList = card.filter(t => t.color === 'bird');
+        cardsForList = card.filter(card => card.color === 'bird');
     }
     if (filter === "frog") {
-        cardsForList = card.filter(t => t.color === 'frog');
+        cardsForList = card.filter(card => card.color === 'frog');
     }
     if (filter === "butterflies") {
-        cardsForList = card.filter(t => t.color === 'butterflies');
+        cardsForList = card.filter(card => card.color === 'butterflies');
     }
     if (filter === "flamingos") {
-        cardsForList = card.filter(t => t.color === 'flamingos');
+        cardsForList = card.filter(card => card.color === 'flamingos');
     }
     if (filter === "monkey") {
-        cardsForList = card.filter(t => t.color === 'monkey');
+        cardsForList = card.filter(card => card.color === 'monkey');
     }
 
     const changeFilter = (value: FilterValuesType) => {

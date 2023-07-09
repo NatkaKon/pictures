@@ -3,6 +3,7 @@ import './App.css';
 import {Cards} from "./components/Cards/Cards";
 import {state} from "./bll/state";
 import {FilterButtons} from "./components/FilterButtons/FilterButton";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
             <Cards cards={cardsForList}
                    removeCard={removeCard}
             />
+            <Footer/>
         </div>
     );
 }

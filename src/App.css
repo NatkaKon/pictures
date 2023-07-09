@@ -1,12 +1,16 @@
+html {
+    background-color: #141519;
+}
+
 .App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
-  text-align: center;
-  color: #a6257c;
-  text-transform: uppercase;
+    text-align: center;
+    color: #a0a8b3;
+    text-transform: uppercase;
 }
 

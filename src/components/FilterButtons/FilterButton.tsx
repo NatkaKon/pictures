@@ -20,7 +20,7 @@ export const FilterButtons: FC<PropsType> = ({ changeFilter }) => {
     return (
         <div className={s.filterBlock}>
             {buttons.map(({ label, value }) => (
-                <button key={value} onClick={() => changeFilter(value)}>
+                <button key={value} onClick={() => changeFilter(value)} className={s.button}>
                     {label}
                 </button>
             ))}

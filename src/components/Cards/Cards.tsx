@@ -43,7 +43,7 @@ export const Cards:FC<CardsPropsType> = ({title, cards, removeCard}) => {
 
                     return <li key={card.id} className={s.card}>
                         <div className={s.cardButton} >
-                            <button onClick={onClickHandler}>x</button>
+                            <button onClick={onClickHandler} className={s.removeBtn}>x</button>
                         </div>
                         <h2>{card.title}</h2>
                         <div className={s.cardContainer}>

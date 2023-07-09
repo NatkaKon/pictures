@@ -1,18 +1,18 @@
 h2{
-    color: #2252bb;
+    color: #a0a8b3;
 }
 .cardsBlock{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
 }
 
 .card{
     align-items: center;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 5px rgba(72, 69, 69, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -25,6 +25,29 @@ h2{
 .cardButton{
     align-self: end;
 }
+
+.removeBtn {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #1c1d21;
+    border-radius: 2px;
+    font-family: inherit;
+    line-height: inherit;
+    transition: 0.4s;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    border: 0 none;
+    color: #FF014F;
+    text-transform: uppercase;
+}
+.removeBtn:hover{
+     color:#a0a8b3;
+     border: 1px solid #FF014F ;
+     transform: translateX(-7px);
+     transition: 0.3s;
+ }
 
 .cardContainer{
     max-width: 300px;

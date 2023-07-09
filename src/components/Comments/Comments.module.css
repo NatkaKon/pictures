@@ -1,7 +1,43 @@
+h4 {
+    color: #a0a8b3;
+    text-align: center;
+}
+
+.commentText {
+    color: #a0a8b3;
+}
+
+input {
+    background-color: #a0a8b3;
+    color: #26272d;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.btnSubmit {
+    width: 50px;
+    padding: 5px 10px;
+    color: #a0a8b3;
+    border-radius: 5px;
+    border: 1px solid #a0a8b3;
+    opacity: 0.7;
+    background-color: #26272d;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.btnSubmit:hover {
+    background-color: #8e9896;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #FF014F;
+}
+
 .error {
-    border: red 1px solid;
+    border: #FF014F 1px solid;
 }
 
 .errorMessage {
-    color: red;
+    color: #FF014F;
 }

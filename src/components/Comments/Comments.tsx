@@ -41,12 +41,12 @@ export const Comments: FC = () => {
                     onKeyPress={onKeyPressHandler}
                     className={error ? s.error : ''}
                 />
-                <button type="submit">Add</button>
+                <button type="submit" className={s.btnSubmit}>Add</button>
                 {error && <div className={s.errorMessage}>{error}</div>}
             </form>
-            <ul>
+            <ul className={s.commentText}>
                 {comments.map((comment) => (
-                    <li key={comment.id}>{comment.text}</li>
+                    <li key={comment.id} >{comment.text}</li>
                 ))}
             </ul>
         </div>

@@ -4,16 +4,6 @@ import {Cards} from "./components/Cards/Cards";
 import {state} from "./bll/state";
 import {FilterButtons} from "./components/FilterButtons/FilterButton";
 
-
-export type FilterValuesType = "all"
-    | "eggs"
-    | "parrot"
-    | "bird"
-    | "frog"
-    | 'butterflies'
-    | 'flamingos'
-    | 'monkey';
-
 function App() {
 
     const [card, setCard] = useState(state.cardsData);
@@ -23,7 +13,7 @@ function App() {
         setCard(removeCard);
     }
 
-    const [filter, setFilter] = useState<FilterValuesType>('all');
+    const [filter, setFilter] = useState<string>('all');
 
     let cardsForList = card;
 
@@ -49,7 +39,7 @@ function App() {
         cardsForList = card.filter(card => card.color === 'monkey');
     }
 
-    const changeFilter = (value: FilterValuesType) => {
+    const changeFilter = (value: string) => {
         setFilter(value);
     }
 

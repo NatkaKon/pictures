@@ -1,32 +1,29 @@
-import React from 'react';
-import {FilterValuesType} from "../../App";
-import s from "./FilterButtons.module.css";
+import React, {FC} from 'react';
+import s from './FilterButtons.module.css';
 
-type PropsType={
-    changeFilter: (value: FilterValuesType) => void
-}
-export const FilterButtons = (props:PropsType) => {
+type PropsType = {
+    changeFilter: (value: string) => void;
+};
 
-    const onAllClickHandler = () => props.changeFilter("all");
-    const onEggsClickHandler = () => props.changeFilter("eggs");
-    const onParrotClickHandler = () => props.changeFilter("parrot");
-    const onBirdClickHandler = () => props.changeFilter("bird");
-    const onFrogClickHandler = () => props.changeFilter("frog");
-    const onButterfliesClickHandler = () => props.changeFilter("butterflies");
-    const onFlamingosClickHandler = () => props.changeFilter("flamingos");
-    const onMonkeyClickHandler = () => props.changeFilter("monkey");
+export const FilterButtons: FC<PropsType> = ({ changeFilter }) => {
+    const buttons = [
+        { label: 'All', value: 'all' },
+        { label: 'Eggs', value: 'eggs' },
+        { label: 'Parrot', value: 'parrot' },
+        { label: 'Bird', value: 'bird' },
+        { label: 'Frog', value: 'frog' },
+        { label: 'Butterflies', value: 'butterflies' },
+        { label: 'Flamingos', value: 'flamingos' },
+        { label: 'Monkey', value: 'monkey' },
+    ];
 
     return (
         <div className={s.filterBlock}>
-            <button onClick={onAllClickHandler}>All</button>
-            <button onClick={onEggsClickHandler}>Eggs</button>
-            <button onClick={onParrotClickHandler}>Parrot</button>
-            <button onClick={onBirdClickHandler}>Bird</button>
-            <button onClick={onFrogClickHandler}>Frog</button>
-            <button onClick={onButterfliesClickHandler}>Butterflies</button>
-            <button onClick={onFlamingosClickHandler}>Flamingos</button>
-            <button onClick={onMonkeyClickHandler}>Monkey</button>
+            {buttons.map(({ label, value }) => (
+                <button key={value} onClick={() => changeFilter(value)}>
+                    {label}
+                </button>
+            ))}
         </div>
     );
 };
-

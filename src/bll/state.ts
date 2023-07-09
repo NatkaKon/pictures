@@ -19,7 +19,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'red'
+            color: 'parrot'
         },
         {
             id: '002',
@@ -28,7 +28,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'red'
+            color: 'parrot'
         },
         {
             id: '003',
@@ -37,7 +37,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'blue'
+            color: 'eggs'
         },
         {
             id: '004',
@@ -46,7 +46,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'blue'
+            color: 'bird'
         },
         {
             id: '005',
@@ -55,7 +55,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'yellow'
+            color: 'parrot'
         },
         {
             id: '006',
@@ -64,7 +64,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'green'
+            color: 'parrot'
         },
         {
             id: '007',
@@ -73,7 +73,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'green'
+            color: 'parrot'
         },
         {
             id: '008',
@@ -82,7 +82,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'yellow'
+            color: 'frog'
         },
         {
             id: '009',
@@ -91,7 +91,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'green'
+            color: 'butterflies'
         },
         {
             id: '010',
@@ -100,7 +100,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'pink'
+            color: 'flamingos'
         },
         {
             id: '011',
@@ -109,7 +109,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'orange'
+            color: 'parrot'
         },
         {
             id: '012',
@@ -118,7 +118,7 @@ export const state: StateType = {
             cardDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. \n' +
                 '                Cupiditate earum ipsum repudiandae! Accusamus, atque dolores ea enim esse \n' +
                 '                fuga itaque iusto minima necessitatibus, quo sunt, totam velit vero vitae voluptatem.',
-            color: 'brown'
+            color: 'monkey'
         },
     ]
 }

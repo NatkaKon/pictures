@@ -6,13 +6,13 @@ import {FilterButtons} from "./components/FilterButtons/FilterButton";
 
 
 export type FilterValuesType = "all"
-    | "yellow"
-    | "red"
-    | "blue"
-    | "green"
-    | 'pink'
-    | 'orange'
-    | 'brown';
+    | "eggs"
+    | "parrot"
+    | "bird"
+    | "frog"
+    | 'butterflies'
+    | 'flamingos'
+    | 'monkey';
 
 function App() {
 
@@ -27,26 +27,26 @@ function App() {
 
     let cardsForList = card;
 
-    if (filter === "yellow") {
-        cardsForList = card.filter(t => t.color === 'yellow');
+    if (filter === "eggs") {
+        cardsForList = card.filter(t => t.color === 'eggs');
     }
-    if (filter === "red") {
-        cardsForList = card.filter(t => t.color === 'red');
+    if (filter === "parrot") {
+        cardsForList = card.filter(t => t.color === 'parrot');
     }
-    if (filter === "blue") {
-        cardsForList = card.filter(t => t.color === 'blue');
+    if (filter === "bird") {
+        cardsForList = card.filter(t => t.color === 'bird');
     }
-    if (filter === "green") {
-        cardsForList = card.filter(t => t.color === 'green');
+    if (filter === "frog") {
+        cardsForList = card.filter(t => t.color === 'frog');
     }
-    if (filter === "pink") {
-        cardsForList = card.filter(t => t.color === 'pink');
+    if (filter === "butterflies") {
+        cardsForList = card.filter(t => t.color === 'butterflies');
     }
-    if (filter === "orange") {
-        cardsForList = card.filter(t => t.color === 'orange');
+    if (filter === "flamingos") {
+        cardsForList = card.filter(t => t.color === 'flamingos');
     }
-    if (filter === "brown") {
-        cardsForList = card.filter(t => t.color === 'brown');
+    if (filter === "monkey") {
+        cardsForList = card.filter(t => t.color === 'monkey');
     }
 
     const changeFilter = (value: FilterValuesType) => {

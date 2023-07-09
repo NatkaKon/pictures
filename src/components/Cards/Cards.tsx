@@ -1,6 +1,7 @@
 import React, {FC, useState} from 'react';
 import Modal from 'react-modal'
 import s from "./Cards.module.css";
+import {Comments} from "../Comments/Comments";
 
 type CardType = {
     id: string
@@ -19,6 +20,7 @@ type CardsPropsType = {
 export const Cards:FC<CardsPropsType> = ({title, cards, removeCard}) => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [comment, setComment]=useState('')
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -28,6 +30,9 @@ export const Cards:FC<CardsPropsType> = ({title, cards, removeCard}) => {
         setModalIsOpen(false);
     };
 
+    const onAddComment = (newComment: string) => {
+        setComment(newComment)
+    };
 
     return <div>
         <h2>{title}</h2>
@@ -53,6 +58,9 @@ export const Cards:FC<CardsPropsType> = ({title, cards, removeCard}) => {
                         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className={s.modalWindow}>
                             <p className={s.cardDescription}>{t.cardDescription}</p>
                         </Modal>
+
+                        <Comments onAddComment={onAddComment}/>
+                        <div>{comment}</div>
 
                     </li>
                 })

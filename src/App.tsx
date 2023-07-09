@@ -56,6 +56,7 @@ function App() {
 
     return (
         <div>
+            <h1>Animals</h1>
             <FilterButtons changeFilter={changeFilter}/>
             <Cards cards={cardsForList}
                    removeCard={removeCard}

@@ -4,3 +4,22 @@
     justify-content: center;
     gap: 20px;
 }
+
+button {
+    border-radius: 50px;
+    width: 5em;
+    height: 3ex;
+    background-color: #d3d4da;
+    font-weight: bold;
+    border: 1px solid #2d2a2a;
+    color: rgba(134, 133, 133, 0.83);
+    cursor: pointer;
+}
+
+button:focus {
+    color: #a6257c;
+}
+
+button:hover {
+    background-color: #8e9896;
+}

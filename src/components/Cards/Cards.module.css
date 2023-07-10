@@ -1,7 +1,8 @@
-h2{
+h2 {
     color: #a0a8b3;
 }
-.cardsBlock{
+
+.cardsBlock {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,7 +11,7 @@ h2{
     overflow: hidden;
 }
 
-.card{
+.card {
     align-items: center;
     box-shadow: 1px 1px 5px rgba(72, 69, 69, 0.2);
     display: flex;
@@ -22,7 +23,7 @@ h2{
     width: 30%;
 }
 
-.cardButton{
+.cardButton {
     align-self: end;
 }
 
@@ -42,27 +43,39 @@ h2{
     color: #FF014F;
     text-transform: uppercase;
 }
-.removeBtn:hover{
-     color:#a0a8b3;
-     border: 1px solid #FF014F ;
-     transform: translateX(-7px);
-     transition: 0.3s;
- }
 
-.cardContainer{
-    max-width: 300px;
-    max-height: 500px;
+.removeBtn:hover {
+    color: #a0a8b3;
+    border: 1px solid #FF014F;
+    transform: translateX(-7px);
+    transition: 0.3s;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-}
-.card img{
-    border-radius: 10px;
-    height: auto;
-    width: 100%;
-}
-.modalWindow{
     width: 300px;
-    margin: 50px auto;
 }
+
+.cardsContainer_img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.modalWindow {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid  #a0a8b3;
+    width: 80%;
+}
+
 .cardDescription {
     border-radius: 10px;
     padding: 10px;

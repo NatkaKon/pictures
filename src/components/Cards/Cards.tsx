@@ -47,7 +47,7 @@ export const Cards:FC<CardsPropsType> = ({title, cards, removeCard}) => {
                         </div>
                         <h2>{card.title}</h2>
                         <div className={s.cardContainer}>
-                            <img src={card.cardPhoto} alt={card.title} onClick={onClickCardModal}/>
+                            <img className={s.cardsContainer_img} src={card.cardPhoto} alt={card.title} onClick={onClickCardModal}/>
                         </div>
 
                         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className={s.modalWindow}>

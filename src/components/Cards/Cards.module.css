@@ -67,6 +67,7 @@ h2 {
     width: 270px;
     height: 270px;
     object-fit: cover;
+    border-radius: 7px;
 }
 
 .modalWindow {
